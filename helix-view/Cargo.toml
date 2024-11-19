@@ -26,7 +26,7 @@ helix-vcs = { path = "../helix-vcs" }
 
 bitflags = "2.6"
 anyhow = "1"
-crossterm = { version = "0.28", optional = true }
+crossterm = { git = "https://github.com/Geobert/crossterm.git", branch = "fix-windows-altgr", optional = true }
 
 tempfile = "3.14"
 
