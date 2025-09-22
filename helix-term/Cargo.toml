@@ -93,7 +93,7 @@ serde = { version = "1.0", features = ["derive"] }
 dashmap = "6.0"
 
 [target.'cfg(windows)'.dependencies]
-crossterm = { version = "0.28", features = ["event-stream"] }
+crossterm = { git = "https://github.com/Geobert/crossterm.git", branch = "fix-windows-altgr", features = ["event-stream"] }
 
 [target.'cfg(not(windows))'.dependencies]  # https://github.com/vorner/signal-hook/issues/100
 signal-hook-tokio = { version = "0.4", features = ["futures-v0_3"] }
